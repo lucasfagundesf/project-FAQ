@@ -16,32 +16,28 @@ body{
     background-image: linear-gradient(to bottom,var(--grad1),var(--grad2));
     height: 100vh;
 }
-main{  
-    transform: translateY(30%); 
+main{   
+    transform: translateY(25%);
     width: 300px;
-    height: 500px;
     background-color: white;
     margin: auto;
-    padding: 15px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.397);  
 }
 .ilustracao{
-    position: relative;
-    top: -128px;
+    position: absolute;
+    top: -113px;
     left: 32px;
     width: 250px;
 }
 .sombra{
     position: relative;
-    top: -204px;
-    left: 32px;
+    top: -15px;
+    left: 17px; 
     width: 250px;
 }
-section{
-    position: relative;
-    top: -100px;
-}
+
 h1{
     font-size: 30px;
     font-weight: 700;
@@ -49,14 +45,37 @@ h1{
     padding: 15px;
 }
 h2{
-    
+    float: left;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
+}
+h2:hover{
+    color: var(--cor2);
+    cursor: pointer;
+}
+.arrow{
+    float: right;
+    transform: translateY(90%);
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 0.5px solid hsl(240, 5%, 91%);
 }
 .inf{
     display: none;
 }
 p{
-    
+    padding-top: 8px;
     font-size: 12px;
+}
+footer{
+    position: absolute;
+    left: 25%;
+    bottom: 35%;
+    text-align: center;
+    font-size: 11px; 
+}
+footer a {
+    color: hsl(228, 45%, 44%); 
 }
